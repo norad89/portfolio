@@ -1,0 +1,211 @@
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+
+li, p {
+  font: 1.3em/1.6 "Lucida Console";
+  color: black;
+}
+
+#navbar {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#navbar a {
+  font: 1.5em "Lucida Console";
+  float: left;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background: rgb(26, 255, 189);
+  color: black;
+}
+
+#cover {
+  color: black;
+  height: 100vh; /* Vertically aligns the text when using viewport height */
+  display: flex; /* Creates a flexbox */
+  justify-content: center; /* Vertically centers items inside the flexbox */
+  align-items: center;   /* Horizontally aligns items inside the flexbox */
+  background: url("images/cover1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#cover h1 {
+  text-align: center;
+  font: 3.2em/1.6 "Lucida Console";
+  color: black;
+  text-shadow: 2px 2px white;
+}
+
+#aboutme {
+  background: linear-gradient(to bottom, #0EFFBA, white);
+  padding-top: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  min-height: 100vh;
+  height: auto;
+  text-align: center;
+}
+
+#aboutme h1 {
+  padding-bottom: 40px;
+  margin:0;
+  font: 3em "Lucida Console";
+  color: black;
+}
+
+#aboutme img {
+  box-shadow: 3px 3px black;
+  margin: 0 auto;
+  width: 22%;
+}
+
+#aboutme img:hover {
+    content: url("images/profile1.jpg");
+}
+
+#aboutme p {
+  clear: both; /* Clears the float property */
+  padding: 50px 100px 0 100px;
+  text-align: justify;
+}
+
+.left {
+  list-style: none;
+  padding-top: 70px;
+  padding-left: 100px;
+  float:left;}
+
+.right {
+  list-style: none;
+  padding-top: 70px;
+  padding-right: 100px;
+  float:right;
+}
+
+#container {
+  size: auto;
+}
+
+#goals, #why {
+  box-sizing: border-box;
+  border: 8px solid black;
+  min-height: 100vh;
+  height: auto;
+  width: 45%;
+}
+
+#goals {
+  background: radial-gradient(#0EFFBA, white);
+  margin: 20px 20px 20px 60px;
+  float: left;
+}
+
+#why {
+  background: radial-gradient(#0EFFBA, white);
+  margin: 20px 60px 20px 20px;
+  float: right;
+}
+
+#goals h1, #why h1 {
+  padding-top: 30px;
+  text-align: center;
+  font: 3em "Lucida Console"
+}
+
+#goals p {
+  padding: 2% 10%;
+  text-align: justify;
+}
+
+#why li {
+  padding: 2% 10% 2% 3%;
+  text-align: justify;
+}
+
+#contact {
+  background: linear-gradient(to top, #0EFFBA, white);
+  clear: both;  /* Clears the float property */
+  height: auto;
+  background-color: none;
+  text-align: center;
+}
+
+#contact h1 {
+  padding-top: 100px;
+    font: 3em "Lucida Console";
+}
+
+#mailme {
+  border: none;
+  text-align: center;
+  padding: 40px 0 120px 0;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 20px 20px;
+  border: none ;
+  cursor: pointer;
+  font: 2em "Lucida Console";
+}
+
+input[type=submit]:hover {
+  background-color: rgb(26, 255, 189, 0);
+  border: 1px solid black;
+  color: black;
+  padding: 19px 19px;
+}
+
+#social {
+  text-align: center;
+}
+
+#social p{
+  margin: 0;
+  color: black;
+  background-color: #0EFFBA;
+  padding-bottom: 100px;
+}
+
+#social a {
+  padding: 10px 10px 10px 0;
+  color: black;
+  text-decoration: none;
+}
+
+#social img {
+  padding-right: 5px;
+  margin-bottom: -13px;
+  width: 39px;
+}
+
+#social a:hover {
+  color: white;
+  background: black;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: 1em;
+  padding: 10px 0 0 0;
+  color: white;
+  margin: 0;
+  background-color: black;
+}
