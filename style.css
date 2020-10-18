@@ -31,10 +31,10 @@ li, p {
 
 #cover {
   color: black;
-  height: 100vh; /* Vertically aligns the text when using viewport height */
-  display: flex; /* Creates a flexbox */
+  height: 100vh;
+  display: flex; /* Creates a flexbox, allowing to vertically alight text when using viewport height */
   justify-content: center; /* Vertically centers items inside the flexbox */
-  align-items: center;   /* Horizontally aligns items inside the flexbox */
+  align-items: center; /* Horizontally aligns items inside the flexbox */
   background: url("images/cover1.jpg");
   background-position: center center;
   background-size: cover;
@@ -137,7 +137,7 @@ li, p {
 
 #contact {
   background: linear-gradient(to top, #0EFFBA, white);
-  clear: both;  /* Clears the float property */
+  clear: both; /* Clears the float property */
   height: auto;
   background-color: none;
   text-align: center;
