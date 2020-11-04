@@ -59,6 +59,8 @@
       </p>
     </div>
 
+    <div id="countDownButton"></div>
+
     <div id="container">
       <div id="goals">
         <h1>Goals</h1>
@@ -123,17 +125,7 @@
     <p id="time"></p>
   </footer>
 
-  <script>
-    var date = new Date();
-    var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    var currentDay = weekdays[date.getDay()];
-
-    let options = { hour: '2-digit', minute: '2-digit', second: '2-digit' }
-    var dateFormat = date.toLocaleString("en-US", options);
-
-    const currentTime = document.getElementById('time');
-    currentTime.innerHTML = `<p>Today is ${currentDay}, current time is ${dateFormat}</p>`
-  </script>
+  <script src="script.js"></script>
 
 </body>
 

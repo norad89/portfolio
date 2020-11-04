@@ -82,6 +82,16 @@ li, p {
   text-align: justify;
 }
 
+#countdown {
+  text-align: center;
+}
+
+#countDownButton {
+  height: auto;
+  background-color: none;
+  text-align: center;
+}
+
 .left {
   list-style: none;
   padding-top: 70px;
