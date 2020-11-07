@@ -5,7 +5,7 @@ body {
 }
 
 li, p {
-  font: 1.3em/1.6 "Lucida Console";
+  font: 1.3em/1.6 "Lucida Console", Monaco, monospace;
   color: black;
 }
 
@@ -17,7 +17,7 @@ li, p {
 }
 
 #navbar a {
-  font: 1.5em "Lucida Console";
+  font: 1.5em "Lucida Console", Monaco, monospace;
   float: left;
   color: white;
   padding: 15px 20px;
@@ -43,7 +43,7 @@ li, p {
 
 #cover h1 {
   text-align: center;
-  font: 3.2em/1.6 "Lucida Console";
+  font: 3.2em/1.6 "Lucida Console", Monaco, monospace;
   color: black;
   text-shadow: 2px 2px white;
 }
@@ -62,7 +62,7 @@ li, p {
 #aboutme h1 {
   padding-bottom: 40px;
   margin:0;
-  font: 3em "Lucida Console";
+  font: 3em "Lucida Console", Monaco, monospace;
   color: black;
 }
 
@@ -82,14 +82,26 @@ li, p {
   text-align: justify;
 }
 
-#countdown {
-  text-align: center;
-}
-
 #countDownButton {
   height: auto;
   background-color: none;
   text-align: center;
+}
+
+#countDownButton button {
+  background-color: black;
+  color: white;
+  padding: 20px 20px;
+  border: none ;
+  cursor: pointer;
+  font: 2em "Lucida Console", Monaco, monospace;
+}
+
+#countDownButton button:hover {
+  background-color: rgb(26, 255, 189, 0);
+  border: 1px solid black;
+  color: black;
+  padding: 19px 19px;
 }
 
 .left {
@@ -114,7 +126,7 @@ li, p {
   border: 8px solid black;
   min-height: 100vh;
   height: auto;
-  width: 45%;
+  width: 44%;
 }
 
 #goals {
@@ -132,7 +144,7 @@ li, p {
 #goals h1, #why h1 {
   padding-top: 30px;
   text-align: center;
-  font: 3em "Lucida Console"
+  font: 3em "Lucida Console", Monaco, monospace;
 }
 
 #goals p {
@@ -155,7 +167,7 @@ li, p {
 
 #contact h1 {
   padding-top: 100px;
-    font: 3em "Lucida Console";
+    font: 3em "Lucida Console", Monaco, monospace;
 }
 
 #mailme {
@@ -170,7 +182,7 @@ input[type=submit] {
   padding: 20px 20px;
   border: none ;
   cursor: pointer;
-  font: 2em "Lucida Console";
+  font: 2em "Lucida Console", Monaco, monospace;
 }
 
 input[type=submit]:hover {
