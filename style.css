@@ -33,6 +33,7 @@ li, p {
   color: black;
   height: 100vh;
   display: flex; /* Creates a flexbox, allowing to vertically alight text when using viewport height */
+  flex-direction: column;
   justify-content: center; /* Vertically centers items inside the flexbox */
   align-items: center; /* Horizontally aligns items inside the flexbox */
   background: url("images/cover1.jpg");
@@ -46,6 +47,10 @@ li, p {
   font: 3.2em/1.6 "Lucida Console", Monaco, monospace;
   color: black;
   text-shadow: 2px 2px white;
+}
+
+#root {
+  text-align: center;
 }
 
 #aboutme {

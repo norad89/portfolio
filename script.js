@@ -35,3 +35,36 @@ function birthdayButton() {
         document.getElementById("countDownButton").innerHTML = "<p>Today's My Birthday!</p>";
     };
 }
+
+bgButton.innerHTML = "<button onclick=backgroundButton()>Try me as well!</button>"
+
+function backgroundButton() {
+    var navbar = document.querySelectorAll("#navbar a")
+    for(var i = 0; i < navbar.length; i ++) {
+        navbar[i].addEventListener("mouseenter", (event) => {event.target.style.background='rgb(254, 67, 96)'})
+        navbar[i].addEventListener("mouseleave", (event) => {event.target.style.background='rgb(0, 0, 0)'});
+    }
+    var cover = document.getElementById("cover")
+    var aboutme = document.getElementById("aboutme")
+    var goals = document.getElementById("goals")
+    var why = document.getElementById("why")
+    var contact = document.getElementById("contact")
+    var social = document.querySelector("#social p")
+
+    return (
+        aboutme.style.background = 'linear-gradient(to bottom, #FE4360, white)',
+
+        cover.style.background = 'url("images/cover2.jpg")',
+        cover.style.backgroundPosition = 'center center',
+        cover.style.backgroundSize = 'cover',
+        cover.style.backgroundRepeat = 'uno-repeat',
+
+        goals.style.background = 'radial-gradient(#FE4360, white)',
+        why.style.background = 'radial-gradient(#FE4360, white)',
+
+        contact.style.background = 'linear-gradient(to top, #FE4360, white)',
+
+        social.style.backgroundColor = 'rgb(254, 67, 96)'
+
+    )
+}

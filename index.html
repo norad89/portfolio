@@ -21,17 +21,13 @@
 
   <header id="cover">
     <h1>
-      Hello there, <br /> I am Gianpaolo Raimondi
+      Hello there <br /> I am Gianpaolo Raimondi
     </h1>
-    
+    <div id='root'></div>
+    <div id='bgButton'></div>
+
   </header>
-  <div id='root'></div>
-  <script type="text/babel">
-    ReactDOM.render(
-        <h1>Hello, world!</h1>,
-        document.getElementById('root')
-      );
-</script>
+
 
   <main>
     <div id="aboutme">
@@ -66,10 +62,10 @@
         with them and got to know them, the more I understood that my place should have been on the other side of the
         fence. So here I am!
       </p>
+      <div id="countDownButton"></div>
     </div>
 
-    <div id="countDownButton"></div>
-   
+
     <div id="container">
       <div id="goals">
         <h1>Goals</h1>
@@ -137,7 +133,52 @@
   <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  
+  <script type="text/babel">
+
+    class Style extends React.Component {
+      render() {
+        return (<button style={this.props.style} onClick={this.props.clickme}>{this.props.button}</button>)
+      }
+    }
+
+    class ColorChange extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          button: 'Try Me!',
+          style: {}
+        }
+      }
+      clickme = () => {
+            this.setState({
+              button: 'Well done!',
+              style: {
+                backgroundColor: 'black',
+                color: 'white',
+                padding: '20px 20px',
+                border: 'none',
+                cursor: 'pointer',
+                font: '2em "Lucida Console", Monaco, monospace',
+              }
+            }/*,callebbacche*/)
+          }
+      render() {
+        return <div>
+          <Style button={this.state.button} style={this.state.style} clickme={this.clickme} />
+        </div>
+      }
+    }
+
+    ReactDOM.render(
+      <div>
+        <ColorChange />
+      </div>,
+      document.getElementById('root')
+
+    );
+
+  </script>
+
 </body>
 
 </html>
