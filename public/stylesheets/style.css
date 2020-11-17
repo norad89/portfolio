@@ -36,7 +36,7 @@ li, p {
   flex-direction: column;
   justify-content: center; /* Vertically centers items inside the flexbox */
   align-items: center; /* Horizontally aligns items inside the flexbox */
-  background: url("images/cover1.jpg");
+  background: url("../images/cover1.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
