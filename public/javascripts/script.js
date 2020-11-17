@@ -54,7 +54,7 @@ function backgroundButton() {
     return (
         aboutme.style.background = 'linear-gradient(to bottom, #FE4360, white)',
 
-        cover.style.background = 'url("images/cover2.jpg")',
+        cover.style.background = 'url("../images/cover2.jpg")',
         cover.style.backgroundPosition = 'center center',
         cover.style.backgroundSize = 'cover',
         cover.style.backgroundRepeat = 'uno-repeat',
